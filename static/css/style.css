@@ -1,0 +1,97 @@
+/* static/css/style.css - Estilo escuro e neon para Vision IA Consultoria */
+:root {
+    --bg: #020917;
+    --surface: rgba(7, 25, 55, 0.92);
+    --accent: #5de4ff;
+    --accent-strong: #1bd7ff;
+    --text: #f5f9ff;
+    --muted: #8fb8d8;
+    --border: rgba(94, 220, 255, 0.18);
+}
+
+body, .stApp {
+    background: radial-gradient(circle at top left, rgba(10, 76, 164, 0.24), transparent 24%),
+                radial-gradient(circle at bottom right, rgba(5, 183, 255, 0.14), transparent 18%),
+                linear-gradient(180deg, #020917 0%, #061a2d 100%);
+    color: var(--text);
+}
+
+.main {
+    padding: 2rem;
+}
+
+.sidebar .sidebar-content {
+    background: linear-gradient(180deg, #021121 0%, #061c35 100%);
+    border-right: 1px solid rgba(94, 220, 255, 0.15);
+    color: white;
+}
+
+.metric {
+    font-size: 2rem;
+    color: var(--accent);
+}
+
+.stApp header {
+    background-color: transparent;
+}
+
+.css-1v3fvcr, .css-18e3th9 {
+    background: transparent;
+}
+
+.stMetric, .stExpander {
+    background: rgba(8, 17, 40, 0.82) !important;
+    border: 1px solid rgba(94, 220, 255, 0.16);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.24);
+}
+
+.stButton button {
+    background: linear-gradient(135deg, #16b2ff 0%, #3fe5ff 100%) !important;
+    color: #02101c !important;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.stButton button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 16px 28px rgba(8, 129, 178, 0.32);
+}
+
+.stTextInput>div>div>input,
+.stSelectbox>div>div>div>div>span,
+.stTextArea>div>textarea {
+    background: rgba(255,255,255,0.04) !important;
+    color: var(--text) !important;
+    border: 1px solid rgba(94, 220, 255, 0.18) !important;
+}
+
+.stDataFrame table {
+    background: rgba(1, 17, 35, 0.9);
+    color: var(--text);
+}
+
+.stDataFrame th {
+    background: rgba(9, 47, 86, 0.95);
+    color: #d4f6ff;
+}
+
+.stTabs [data-baseweb="tab"] {
+    border-radius: 12px 12px 0 0;
+    background-color: rgba(5, 17, 42, 0.85);
+}
+
+.stTabs [aria-selected="true"] {
+    background: linear-gradient(135deg, #16b2ff 0%, #2fd5ff 100%);
+    color: #02101c;
+}
+
+@keyframes glow {
+    0%, 100% { box-shadow: 0 0 16px rgba(29, 211, 255, 0.2); }
+    50% { box-shadow: 0 0 32px rgba(29, 211, 255, 0.35); }
+}
+
+.glow {
+    animation: glow 3.4s ease-in-out infinite;
+}
